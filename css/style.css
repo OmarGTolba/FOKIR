@@ -1,0 +1,1042 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+padding: 0;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 10px;
+}
+.clear{
+    clear: both;
+}
+
+
+
+
+/*........................................START NAVIGATION...................................... */
+/* ............................................................................................. */
+.navigation{
+background-color: transparent;
+    position: fixed;
+left: 0;
+right: 0;
+    padding: 20px 0;    
+    margin: auto;    
+}
+.navigationchild{
+   margin: auto;
+    width: 75%;
+}
+.navLogo a{
+    color: #ff305b;
+    text-decoration: none;
+}
+.navLogo{
+    margin: auto;
+    font-size: 24px;
+    float: left;
+    width: 50%;
+}
+.navIcons a{
+    color: white;
+    
+    text-decoration: none;
+}
+.navIcons a:hover{
+    background-color: #ff305b;
+}
+
+.navIcons li{   
+    letter-spacing: 0.5px;
+    padding: 0 10px ;
+    box-sizing: border-box;
+    float: right;
+    list-style: none;
+}
+.navIcons {
+    float: right;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+    .navIcons{
+        display: none;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+.navIcons li{padding: 0 5px;
+}    
+.navIcons{
+width: 70%;;
+}
+.navLogo{
+    width: 30%;
+}
+.navigationchild{
+    width: 90%;
+}
+}
+/* ............................................................................................. */
+/*........................................END NAVIGATION........................................ */
+    
+
+
+
+
+/*..........................................START HOME.......................................... */
+/* ............................................................................................. */
+.homeText h3 {
+    color: white;
+}
+
+.homeText h4 {
+    color: white;
+}
+h3 , h4 {color: black;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+h1{
+    font-size: 70px;
+    color: #ff305b;
+}
+.home{
+    
+    margin-bottom: 20px;
+ 
+    background-image: url(img/slider/slider-01.jpg);
+    height: 100vh;
+    background-size:cover ;
+    background-position: center  center;
+}   
+
+.homeChild{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+ 
+    background-color: rgba(0, 0, 0,0.8);
+}
+.homeText{
+ text-align: center;
+ vertical-align: middle;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    left: 25%;
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+    h3 , h4 {
+                font-size: 18px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    }
+.homeText{
+       position: absolute;
+       top: 40%;
+       right: 25%;
+       left: 25%;
+   }
+
+/* ............................................................................................. */
+/* ...........................................END HOME.......................................... */
+
+
+
+
+
+/* ........................................START HELLO.......................................... */
+/* ............................................................................................. */
+.hello{
+    padding: 80px 0;
+}
+.helloimg{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.hellochild{
+    width: 80%;
+    margin: auto;
+}
+.hellotext{
+    float: left;
+    width: 50%;
+
+}
+.helloimglayout{
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}
+.helloimg img{
+    width: 100%;
+}
+.helloimgchild{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    border: 10px solid #555;
+}
+.imgcaptionlogos{
+    position: absolute;
+    top: 45%;
+left: 0;
+right: 0;
+}
+.helloimgcaption{
+  overflow: hidden;
+    transition-duration: 1s;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.helloimgchild:hover .helloimgcaption{
+    top: 0;
+}
+.imgcaptionlogos ion-icon{
+    color: white;
+    margin: 10px;
+}
+.hellotext h2{
+    margin-bottom: 25px;
+    padding-left: 13px;
+    font-size: 34px;
+    font-weight: 600;
+    position: relative;
+}
+.hellotext h2::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 30px;
+    width: 5px;
+    background-color: #ff305b;
+}
+.hellotext p{
+    color: #999999;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.hellotext li{
+color:#999999;
+    float: left;
+    width: 40%;
+    color: rg;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+    list-style: none;
+}
+.hellotext li span{
+    font-weight: 500;
+    color: #333333;
+}
+.hellobuttons{
+    width: 90%;
+}
+.hello button a{
+    text-decoration: none;
+    color: white;
+}
+.hello button{
+    width: 35%;
+    text-align: center;
+    padding: 10px 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-color: transparent;
+    background: #ff305b;
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+    .hellotext li{
+            width: 80%;
+        }
+.helloimg{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.helloimgchild{
+    width: 100%;
+    border: none;
+}
+.helloimglayout{
+    position: static;
+}
+.hellotext{
+    width: 100%;
+
+}
+.hellobuttons{
+    padding: 0;
+    width: 100%;
+        }
+        
+.hello button{
+    width: 35%;
+    padding: 10px 10px;
+}
+    }
+@media screen and (min-width:769px) and (max-width:992px) {
+    .hellochild{
+        width: 100%;
+        margin: auto;
+    }
+    .helloimglayout{
+        position: static;
+    }
+    .helloimgchild{
+        width: 95%;
+
+        border: none;
+    }
+    .helloimg{
+        padding: 0;
+margin: 0;
+        width: 48%;
+    }
+    .hellotext{
+        margin-left:15px ;
+       margin-top: 0;
+       margin-bottom: 0;
+        width: 48%;
+    }
+    .helloimg img{
+        width: 100%;
+    }   
+    .hellotext li span{
+        font-size: 14px;
+        
+    }
+    .hellotext li{
+        margin: 5px 0;
+        font-size: 14px;
+        width: 50%;
+    }
+    .hellotext h2{
+    
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .hellotext p{
+    
+        margin: 5px 0;
+    }
+    .hellobuttons button{
+        width: 48%;
+        margin: 0;
+        padding: 15px;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+.hellochild{
+    width: 100%;
+    margin: auto;
+}
+.helloimgchild{
+    width: 70%;
+}
+.helloimg{
+    padding: 0;
+margin: 0;
+    width: 48%;
+}
+.hellotext{
+    margin-left:15px ;
+   margin-top: 0;
+   margin-bottom: 0;
+    width: 48%;
+}
+.helloimg img{
+    width: 100%;
+}
+.hellotext li span{
+    font-size: 14px;
+    
+}
+.hellotext li{
+    margin: 5px 0;
+    font-size: 14px;
+    width: 50%;
+}
+.hellotext h2{
+
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+.hellotext p{
+
+    margin: 5px 0;
+}
+.hellobuttons button{
+    width: 48%;
+    margin: 0;
+    padding: 15px;
+}
+}
+/* ............................................................................................. */
+/* .........................................END HELLO........................................... */
+
+
+
+
+
+/* .....................................START OUR-SERVICEES..................................... */
+/* ............................................................................................. */
+.ourservices{
+    background-color: #f1f1f1;
+    float: left;
+ padding: 80px 80px;
+    text-align: center;
+ margin-top: 100px;
+    width: 100%;
+}
+.ourservicesText{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.ourservicesText h2{
+ font-size: 40px;
+ font-weight: 800;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    
+    position: relative;
+}
+.services{
+    line-height: 25px;
+    margin: auto;
+    width: 80%;
+}
+.service{
+ padding: 40px 15px;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+}
+.service:hover{
+    background-color: white;
+}
+.ourservices h3{
+    font-size: 24px;
+}
+.ourservicesText h2::before{
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 320px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.ourservicesText h2::after{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px;   
+}
+ion-icon{
+    vertical-align: middle;
+}
+.service ion-icon {
+    color:#ff305b;
+    display: block;
+    margin: 20px auto;  
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+    .service{
+        width: 100%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    .service{
+        width: 33.3%;
+    }
+}
+/* ............................................................................................. */
+/* .......................................END OUR-SERVICEES..................................... */
+
+
+
+
+
+/* .....................................START OUR-PORTFOLIO..................................... */
+/* ............................................................................................. */
+.ourPortfolio{
+    margin-top: 100px;
+       text-align: center;
+        width: 100%;
+     } 
+      .ourPortfolioChild{
+       width: 80%;
+       text-align: center;
+       margin: auto;
+     }
+     .ourPortfolioIcons{
+       width: 40%;
+       text-align: center;
+       margin: auto;
+       margin-bottom: 100px;
+   }
+   .ouRPortfolioIcons li button{
+       font-size: 16px;
+       cursor: pointer;
+       background-color: transparent;
+       border: none;
+       padding: 3px 12px;
+   }
+     .ouRPortfolioIcons li{
+      width: 25%;
+      list-style:none;
+      text-decoration: none;
+       float: left;
+     } 
+     .singleimg{
+       padding: 20px;
+       width: 33.3%;
+       margin: auto;
+       float: left;
+   }
+     .singleimg img{
+       width: 100%;
+       
+     }
+     .aaa{
+   position: relative;
+     }
+   .singleimg  .caption{
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transition-duration: 1s;
+   background-color: rgba(0, 0, 0,0.5);
+    } 
+    .singleimg:hover  .caption{
+   opacity: 1; 
+   }
+     .ourPortfolioText h2::before{
+       background-color: #ff305b;
+       bottom: 5px;
+       height: 1px;
+       width: 320px;
+       content: "";
+       left: 0;
+       margin: 0 auto;
+       position: absolute;
+       right: 0;
+   }
+   .ourPortfolioText h2::after{
+       content: "";
+       left: 0;
+       margin: 0 auto;
+       position: absolute;
+       right: 0;
+       border-color: #ff305b;
+       border-style: solid;
+       border-width: 1px 0;
+       bottom: 0;
+       padding: 4px 0 5px;
+       width: 140px;   
+   }
+   .ourPortfolioimages{
+       width: 100%;
+       margin: auto;
+   }
+   .ourPortfolioText{
+       margin: auto;
+       width: 80%;
+       text-align: center;
+   }
+   .ourPortfolioText h2{
+    font-size: 40px;
+    font-weight: 800;
+       margin-bottom: 40px;
+       padding-bottom: 30px;
+       
+       position: relative;
+   }
+   /* ........................................................................... */
+   @media screen and (max-width:768px){
+       .singleimg{
+           width: 100%;
+       }
+   .ourPortfolioIcons{
+       width: 100%;
+   }
+   
+   .singleimg img{
+       width: 100%;   
+     }
+   .singleimg  .caption{
+       margin: auto;
+       width: 100%;
+    }
+   .ouRPortfolioIcons li button{
+       font-size: 14px;
+   }
+   .ourPortfolioimages{
+       width: 100%;
+       margin: auto;
+   }
+   }
+   @media screen and (min-width:769px) and (max-width:992px) {
+       .singleimg{
+           width: 50%;
+       }}      
+/* ............................................................................................. */
+/* .........................................END HELLO........................................... */
+
+
+
+
+
+/* ........................................START FACTS.......................................... */
+/* ............................................................................................. */
+.facts{
+    margin: 80px 0 ;
+    background-color: #f1f1f1;
+    float: left;
+ padding: 80px 0px;
+    text-align: center;
+    width: 100%;
+}
+.factsChild{
+    width: 80%;
+margin: auto;
+    
+text-align: center;
+}
+.singlefact ion-icon{
+    color: #ff305b;
+    
+margin: 20px auto;
+}
+.singlefact{
+    padding: 0 15px;
+    float: left;
+    margin: auto;
+    padding: 0px 15px;
+    width: 25%;
+}
+.singleBlogInner iframe{
+ float: left;
+    width: 100%;
+}
+/* ........................................................................... */
+@media screen and (max-width:600px){
+    .singlefact{
+        width: 100%;
+    }
+}
+@media screen and (min-width:601px) and (max-width:768px){
+    .singlefact{
+        width: 50%;
+    }
+}
+/* ............................................................................................. */
+/* .........................................END FACTS........................................... */
+
+
+
+
+
+/* .......................................START FEEDBACK........................................ */
+/* ............................................................................................. */
+.feedback{
+    margin-bottom: 50px;
+    padding: 80px 0px;
+}
+.feedbackcard{
+    position: relative;
+    width: 50%;
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.feedbackimg{
+    width: 20%;
+    float: left;
+}
+.feedbacktext{
+    width: 80%;
+    float: right;
+}
+.feedbacktext p {
+    margin: 20px 0;
+    line-height: 25px;
+    color: rgb(85, 85, 85);
+}
+.feedbacktext h3{
+    margin: 20px 0;
+}
+.feedbacktext a{
+    color: #777777;
+}
+.feedbackimg img{
+    position: relative;
+    width: 80%;
+    border-radius: 50%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-top: 80px solid #ff305b;
+    border-left: 80px solid #ff305b;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.feedbacktitle h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;   
+    position: relative;
+   }
+   .feedbacktitle h2::before{
+       background-color: #ff305b;
+       bottom: 5px;
+       height: 1px;
+       width: 320px;
+       content: "";
+       left: 0;
+       margin: 0 auto;
+       position: absolute;
+       right: 0;
+   }
+   .feedbacktitle h2::after{
+       content: "";
+       left: 0;
+       margin: 0 auto;
+       position: absolute;
+       right: 0;
+       border-color: #ff305b;
+       border-style: solid;
+       border-width: 1px 0;
+       bottom: 0;
+       padding: 4px 0 5px;
+       width: 140px;   
+   }
+/* ........................................................................... */ 
+@media screen and (max-width:768px){
+    .feedbackcard{
+        width: 80%;
+    }
+    .feedbackcard h3{
+        margin-top: 30px;
+    }
+    
+.feedbackimg {
+    width: 50%;
+    position: relative;  
+left: 30%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .feedbackcard{
+        width: 90%;
+    }
+ }
+@media screen and (min-width:993px) and (max-width:1200px){
+    .feedbackcard{
+        width: 70%;
+    }
+ } 
+/* ............................................................................................. */
+/* ........................................END FEEDBACK......................................... */
+
+
+
+
+
+/* .......................................START OUR-BLOG........................................ */
+/* ............................................................................................. */
+.ourBlog{
+    background-color: #f1f1f1;
+    float: left;
+ padding: 80px 80px;
+    text-align: center;
+    width: 100%;
+ margin-top: 40px;
+ margin-bottom: 80px;
+ width: 100%;
+}
+.ourBlogChild{
+     width: 95%;
+    margin: auto;
+}
+.ourBlogChild h2{
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.ourBlogChild h2::before{
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 320px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.ourBlogChild h2::after{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px;   
+}
+.ourBlogTitle{
+    width: 100%;
+    text-align: center;
+
+}
+.singleBlog img{
+    width: 100%;
+ }
+ .singleBlog iframe{
+height: 230px;
+margin-bottom: 15px;
+ }
+.singleBlog{
+    padding: 0 15px;
+text-align: left;
+    margin: auto;
+    float: left;
+    width: 33.3%;
+}
+.singleBlogInner{   
+background-color: white;
+}
+.singleBlog p{
+
+    padding: 20px 20px;
+}
+.singleBlog h3{
+    padding: 0 15px;
+}
+.singleBlog a{
+    color: black;
+    text-decoration: none;
+}
+.singleBlog a:hover{
+    color: #ff305b;
+}
+/* ........................................................................... */
+@media screen and (max-width:767px){
+    .singleBlog{
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .singleBlog{
+        width: 50%;
+    }
+}
+/* ............................................................................................. */
+/* ........................................END OUR-BLOG......................................... */
+
+
+
+/* ......................................START CONTACT-US....................................... */
+
+/* ............................................................................................. */
+.contactUs{
+ 
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+.contactUsChild{
+    width: 80%;
+    margin: auto;
+}
+.contactUsTitle h2{
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.contactUsTitle h2::before{
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 320px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.contactUsTitle h2::after{
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px;   
+}
+.input{ 
+   overflow:auto ;
+    text-align: center;    
+    width: 70%;
+    margin: auto;
+}
+.input input{
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     padding: 15px;
+    height: 40px;
+ margin: 10px 0;
+    text-align: left;
+width: 100%;
+}
+.inputpp textarea{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+ 
+    padding: 15px;
+}
+.inputInner input{
+    height: 40px;
+    width: 100%;
+}
+.inputInner{
+   float: left;
+   width: 50%; 
+   padding-left: 15px;
+   padding-right: 15px;
+
+}
+.inputpp{
+    
+   padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+.input input{
+    width: 100%;
+}    
+.inputInner{
+    float: left;
+    width: 100%; 
+    
+ }
+}
+/* ............................................................................................. */
+/* ........................................END CONTACT-US....................................... */
+
+
+
+
+/* ........................................START FOOTER......................................... */
+/* ............................................................................................. */
+
+.footer{
+    margin-top: 80px;
+ 
+    background-color: #353330;
+    text-align: center;
+}
+.footer ion-icon{
+    size: large;
+}
+.footer ion-icon:hover{
+color: #ff305b;
+}
+.footer a{
+    color: #ff305b;
+  text-decoration: none;  
+}
+
+.footer a:hover{
+    
+  text-decoration: underline; 
+    }
+.footer ion-icon {
+    padding: 20px 10px 20px;
+  color: #969696;
+  }
+  .input textarea{
+    width: 100%;
+    height: auto;
+    
+  }
+  .footer p{ 
+    padding: 20px 0 50px;
+    color: #969696;
+    font-size: 14px;
+  }
+
+/* ........................................................................................... */
+/* ........................................END FOOTER......................................... */
